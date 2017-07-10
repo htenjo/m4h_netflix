@@ -1,5 +1,8 @@
 body {
-	padding-top: 100px;
+	padding-top: 150px;
+	background-image: url("../img/winter_fullhd_bg.png");
+	font-size: 20px;
+	font-family: 'Merriweather', serif;
 }
 
 /*
@@ -17,29 +20,66 @@ body {
 	transition: transform .5s;
 	border-radius: 10px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.5em;
 	color:white;
-	margin: 10px auto;
-	
+	margin: 15px auto;
+	padding: 50px 10px;
+	display: table;
 }
 
+.vcenter {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .option:hover {
 	background-color: blue;
 	transform: scale(1.1) ;
-	-webkit-transform: scale(1.1);
-	 -moz-transform: scale(1.1);
-	 -o-transform: scale(1.1);
 	box-shadow: 0px 0px 5px 2px green;
+}
+
+.back-button {
+	margin: 0px 50px 50px 0px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.back-button a {
+	color: white;
+	font-size: 1.5em;
+}
+
+.social {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 30px;
+	color: white;
+}
+
+#tf-embed-5961a25f4ac1c {
+	max-height: inherit;
+	max-width: inherit;
+	height:500px;width:100%;    
 }
 
 
 @media (max-width: 768px) {
+	body {
+		padding-top: 20px;
+	}
+
 	.option {
 		height: 180px;
 		width: 80%;
-		font-size: 16px;
-		color:red;
-		margin: 10px auto;
+		font-size: 1.4em;
+	}
+
+	.back-button {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		margin:0px;
 	}
 }
