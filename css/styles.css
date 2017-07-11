@@ -1,3 +1,45 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-size: 16px;
+}
+
+#header {
+	height: 15vh;
+	background-color: #e2e2e2;
+}
+
+#header .container, #header .container .row{
+	height: 100%;
+}
+
+#footer {
+	height: 10vh;
+	background-color: #e2e2e2;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#contact-button {
+	background-color: #349fd1;
+	border: none;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	border-radius: 3px 3px 3px 3px;
+	margin-top: 5vh;
+}
+
+
+
+
+
+/*
 body {
 	padding-top: 150px;
 	background-image: url("../img/winter_fullhd_bg.png");
@@ -5,13 +47,13 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
-/*
+
 .col-md-1, .col-md-2, .col-md-3, .col-md-4 {
 	border: 1px solid;
 	text-align: center;
 	
 }
-*/
+
 .option {
 	height: 200px;
 	width: 100%;
@@ -83,3 +125,62 @@ body {
 		margin:0px;
 	}
 }
+
+*/
+
+
+/* =================== Start Menu Css ==================*/
+.sidenav {
+    height: 75%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 15vh;
+    left: 0;
+    background-color: #349fd1;
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+    box-shadow: 10px 5px 20px grey;
+}
+
+.sidenav hr {
+	margin: 0px 30px 0px 30px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav-icon {
+	cursor: pointer;
+	font-size: 2.5em;
+	position: absolute;
+	bottom: 0px;
+	color: #349fd1;	
+	margin-top: 5vh;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* =================== End Menu Css ==================*/

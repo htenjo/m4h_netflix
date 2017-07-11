@@ -7,9 +7,13 @@
     <title>M4H</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
+  <div id="header"></div>
+  <div style="height: 50%; background-color: green">hmmm</div>
+  <!--
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
@@ -61,10 +65,17 @@
   <div >
     <a href="contacto.html">Contáctenos</a>
   </div>
+  -->
+
+  <div id="footer"></div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  </script>
 </body>
 </html>
