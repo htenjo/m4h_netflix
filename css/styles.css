@@ -6,11 +6,13 @@
 
 body {
 	font-size: 16px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #header {
 	height: 15vh;
 	background-color: #e2e2e2;
+    margin-bottom: 50px;
 }
 
 #header .container, #header .container .row{
@@ -20,13 +22,13 @@ body {
 #footer {
 	height: 10vh;
 	background-color: #e2e2e2;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
 
 #contact-button {
-	background-color: #349fd1;
+	background-color: rgb(0, 154, 218);
 	border: none;
 	color: white;
 	text-align: center;
@@ -35,50 +37,66 @@ body {
 	margin-top: 5vh;
 }
 
-
-
-
-
-/*
-body {
-	padding-top: 150px;
-	background-image: url("../img/winter_fullhd_bg.png");
-	font-size: 20px;
-	font-family: 'Merriweather', serif;
-}
-
-
-.col-md-1, .col-md-2, .col-md-3, .col-md-4 {
-	border: 1px solid;
-	text-align: center;
-	
+.col-md-4, col-sm-6, col-xs-12 {
+  //border: 2px solid black;
 }
 
 .option {
 	height: 200px;
 	width: 100%;
-	background: white;
-	background: linear-gradient(gray, black);
 	transition: transform .5s;
-	border-radius: 10px;
+	border-radius: 2px;
 	text-align: center;
-	font-size: 1.5em;
 	color:white;
 	margin: 15px auto;
-	padding: 50px 10px;
-	display: table;
-}
-
-.vcenter {
-    display: table-cell;
-    vertical-align: middle;
+    padding-top: 45px;
 }
 
 .option:hover {
 	background-color: blue;
 	transform: scale(1.1) ;
-	box-shadow: 0px 0px 5px 2px green;
+	box-shadow: 0px 0px 5px 2px gray;
 }
+
+.option-link:hover {
+  text-decoration: none;
+}
+
+.option .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+
+.option .subtitle {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+
+.option.nos {
+    background: linear-gradient(rgb(58, 135, 183), rgba(58, 135, 183,0.6));
+}
+.option.ilu {
+    background: linear-gradient(rgb(0, 109, 153), rgba(0, 109, 153,0.6)); 
+}
+.option.ani {
+    background: linear-gradient(rgb(0, 113, 181), rgba(20, 70, 102,0.6)); 
+}
+.option.des {
+    background: linear-gradient(rgb(213, 132, 0), rgba(213, 132, 0, 0.5)); 
+}
+.option.tra {
+    background: linear-gradient(rgb(202, 97, 7), rgba(202, 97, 7,0.5)); 
+}
+.option.reg {
+    background: linear-gradient(rgb(171, 68, 23), rgba(171, 68, 23,0.5)); 
+}
+
+/*
 
 .back-button {
 	margin: 0px 50px 50px 0px;
@@ -137,7 +155,7 @@ body {
     z-index: 1;
     top: 15vh;
     left: 0;
-    background-color: #349fd1;
+    background-color: rgb(0, 154, 218);
     overflow-x: hidden;
     transition: 0.8s;
     padding-top: 60px;
@@ -151,7 +169,7 @@ body {
 .sidenav a {
     padding: 8px 8px 8px 50px;
     text-decoration: none;
-    font-size: 20px;
+    
     font-weight: 300;
     color: #fff;
     display: block;
@@ -181,6 +199,6 @@ body {
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 15px;}
 }
 /* =================== End Menu Css ==================*/
