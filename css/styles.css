@@ -12,13 +12,9 @@ body {
 
 #header {
 	height: 15vh;
+	min-height: 80px;
 	background-color: #e2e2e2;
     margin-bottom: 50px;
-}
-
-#header .container, #header .container .row{
-	height: 100%;
-	
 }
 
 #footer {
@@ -36,11 +32,11 @@ body {
 	text-align: center;
 	padding: 10px 20px;
 	border-radius: 3px 3px 3px 3px;
-	margin-top: 5vh;
+	margin-top: 5vh; 
 }
 
-.col-md-4, .col-sm-6, .col-xs-12 {
-  /** border: 2px solid black; **/
+.col-sm-2, .col-sm-3, .col-md-4, .col-sm-6, .col-xs-12 {
+  /* border: 2px solid black; */
 }
 
 .option-link:hover {
@@ -185,8 +181,8 @@ body {
 
 .sidenav .social {
 	position: absolute;
-	bottom: 100px;
-	width: 100%;
+	bottom: 20px;
+	width: 250px;
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
@@ -195,7 +191,7 @@ body {
 #social-label {
 	background-color: white;
 	color: rgb(0, 154, 218); 
-	width: 125px;
+	width: 120px;
 	margin: 0 0 0 50px;
 	font-size: 0.8em;
 	font-weight: 400;
@@ -204,27 +200,42 @@ body {
 
 #social-label span {
 	font-size: 2em;
-	padding: 5px 10px;
+	padding: 5px 5px;
+}
+
+#social-text {
+	font-size: 0.8em;
+	font-weight: 200;
+	text-transform: none;
+	margin: 0px 10px 0px 10px;
 }
 
 #social-icons {
 	font-size: 1.5em;
-	width: 125px;
+	width: 120px;
 	margin: 0 0 0 50px;
-	padding: 5px;
-	position: relative;
 }
 
-#social-icons span:nth-child(1){
-	position: absolute;
-	left: 0px;
-	padding-top: 5px;
+#social-icons a {
+	
+	display: inline; 
 }
 
-#social-icons span:nth-child(3){
-	position: absolute;
-	right: 0px;
-	padding-top: 5px;
+#social-icons button {
+	background-color: transparent;
+	border: 0;
+	width: 28%;
+}
+
+.qr-icon {
+	text-align: center;
+}
+
+.qr-icon p {
+	font-size: 0.9em;
+	padding: 10px;
+	text-align: center;
+	width: 100%
 }
 
 #share-button {

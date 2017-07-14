@@ -1,14 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-2 col-xs-6">
+    <div class="col-sm-3 col-xs-6">
       <span class="glyphicon glyphicon-menu-hamburger sidenav-icon" onclick="openMenu()"></span>
       
       <div id="mySidenav" class="sidenav">
         <a href="nosotros.html">NOSOTROS</a><hr/>
-        <a href="ilustraciones.html">ILUSTRACION</a><hr/>
-        <a href="animacion.html">ANIMACION</a><hr/>
+        <a href="ilustraciones.html">ILUSTRACIÓN</a><hr/>
+        <a href="animacion.html">ANIMACIÓN</a><hr/>
         <a href="contenidos.html">CONTENIDO</a><hr/>
-        <a href="traduccion.html">TRADUCCION</a><hr/>
+        <a href="traduccion.html">TRADUCCIÓN</a><hr/>
         <a href="registros.html">SOFTWARE</a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
 
@@ -18,26 +18,56 @@
             Comparte
           </p>
           <p id="social-icons">
-            <span class="fa fa-twitter"></span>
-            <span class="fa fa-facebook"></span>
-            <span class="fa fa-instagram"></span>
+              <!-- Small modal -->
+              <button type="button" data-toggle="modal" data-target=".qr-icon" data-xicon="twitter" 
+                onclick="assignQR('twitter')">
+                <span class="fa fa-twitter"></span>
+              </button>
+              <button type="button" data-toggle="modal" data-target=".qr-icon" data-xicon="facebook"
+                onclick="assignQR('facebook')">
+                <span class="fa fa-facebook"></span>
+              </button>
+              <button type="button" data-toggle="modal" data-target=".qr-icon" data-xicon="instagram"
+                onclick="assignQR('instagram')">
+                <span class="fa fa-instagram"></span>  
+              </button>
+          </p>
+          <p id="social-text">
+            Comparte en tus redes y participa por premios en nuestros servicios
           </p>
         </div>
-        
-        
-        
       </div>
     </div> 
     
 
-    <div class="col-sm-8 hidden-xs text-center">
+    <div class="col-sm-6 hidden-xs text-center">
       <a href="index.html">
-        <img src="img/logo.png" height="120px">
+        <img src="img/logo.png" height="120px" style="margin-top: -20px;">
       </a>
     </div>
 
-    <div class="col-sm-2 col-xs-6">
-      <button type="button" id="contact-button">CONTACTO</button>
+    <div class="col-sm-3 col-xs-6" style="text-align: right;">
+      <a href="contacto.html">
+        <button type="button" id="contact-button">CONTACTO</button>
+      </a>
     </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="qr-icons" class="modal fade qr-icon" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div id="qr-icon">
+        <img id="qr-icon-src" src="img/logo_ilu.png">
+        <p>Escanea el código QR y comparte a M4H en tus redes para ganar premios en nuestros servicios.</p>
+      </div>
   </div>
 </div>
