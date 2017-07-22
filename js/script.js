@@ -48,17 +48,27 @@ $(document).ready(function(){
 });
 
 $(function() {
-    $(".video").click(function () {
-      var theModal = $(this).data("target"),
-      videoSRC = $(this).attr("data-video"),
-      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=1&showinfo=0&html5=1";
-      $(theModal + ' iframe').attr('src', videoSRCauto);
-      $(theModal + ' button.close').click(function () {
-        $(theModal + ' iframe').attr('src', videoSRC);
-      });
-      $(theModal).on('hidden.bs.modal', function () {
-        $(theModal + ' iframe').attr('src', videoSRC);
-      });
+  $(".video").click(function () {
+    var theModal = $(this).data("target");
+    videoSRC = $(this).attr("data-video");
+    videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=1&showinfo=0&html5=1";
+    $(theModal + ' iframe').attr('src', videoSRCauto);
+    $(theModal + ' button.close').click(function () {
+      $(theModal + ' iframe').attr('src', videoSRC);
+    });
+    $(theModal).on('hidden.bs.modal', function () {
+      $(theModal + ' iframe').attr('src', videoSRC);
     });
   });
+});
+
+$(function() {
+  $(".lightbox-item").click(function () {
+    var theModal = $(this).data("target");
+    console.log("The Model " + theModal);
+    var imageSRC = $(this).attr("data-alta");
+    console.log("The imageSRC=" + imageSRC)
+    $(theModal + ' img').attr('src', imageSRC);
+  });
+});
         
