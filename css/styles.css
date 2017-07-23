@@ -198,6 +198,19 @@ html, body {
 	background-size: cover;
 }
 
+.background-faded.img_nosotros {
+	height: 500px;
+	float: right;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/nos/baner.jpg");
+}
+
+.image-faded .background-faded.img_anim {
+	background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/anim/baner.png");
+}
+
 .image-faded .background-faded.img_ilustracion {
 	background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/ilust/baner.png");
 }
@@ -240,7 +253,9 @@ html, body {
 	font-size: 1em;
 }
 
-
+.trad-container img {
+	margin: 10px 20px;
+}
 
 /* =================== Start Menu Css ==================*/
 .sidenav {
@@ -373,5 +388,9 @@ html, body {
 
 	.image-faded .text-faded{
 		width: 80%;
+	}
+
+	.contact-info {
+		padding: 15px 0px;
 	}
 }
