@@ -14,7 +14,7 @@ html, body {
 #header {
 	height: 15vh;
 	min-height: 80px;
-	background-color: #e2e2e2;
+	/* background-color: #e2e2e2; */
     margin-bottom: 30px;
 }
 
@@ -144,9 +144,8 @@ html, body {
 
 .nosotros-text p {
 	padding: 0px 20px;
-	font-size: 0.7em;
+	font-size: 0.9em;
 	line-height: 200%;
-	color: #9e9c9c;
 }
 
 .nosotros-text hr {
@@ -220,14 +219,16 @@ html, body {
 }
 .image-faded .background-faded.img_contenido {
 	background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/cont/baner.jpg");
+
 }
 .image-faded .background-faded.img_traduccion {
 	background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../img/trad/baner.jpg");
 }
 
 .image-faded p {
-	font-weight: 300;
-	font-size: 0.7em;
+	
+	font-size: 1em;
+	text-align: justify;
 }
 
 .image-faded p > span {
@@ -238,8 +239,14 @@ html, body {
 
 .text-faded ul li{
 	font-weight: 300;
-	font-size: 0.7em;
-	list-style: none;
+	font-size: 0.9em;
+	
+}
+
+.text-faded div {
+	width: 45%;
+	display: inline-block;
+	padding-left: 15px;
 }
 
 .image-faded h1 {
@@ -253,8 +260,14 @@ html, body {
 	font-size: 1em;
 }
 
+.trad-container {
+	margin-top: 10px;
+	padding-left: 50px;
+}
+
 .trad-container img {
-	margin: 10px 20px;
+	margin-top: 10px;
+	margin-right: 15px;
 }
 
 /* =================== Start Menu Css ==================*/

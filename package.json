@@ -1,0 +1,22 @@
+{
+  "name": "m4h_netflix",
+  "version": "1.0.0",
+  "description": "M4H web page required for congress.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerovirus23/m4h_netflix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerovirus23/m4h_netflix/issues"
+  },
+  "homepage": "https://github.com/zerovirus23/m4h_netflix#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
