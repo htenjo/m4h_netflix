@@ -157,6 +157,12 @@ html, body {
 	background-color: black;
 }
 
+.nosotros-back a {
+	font-weight: bolder;
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+
 .slider-container {
 	background-color: #CCC;
 	clear: both;
@@ -173,6 +179,10 @@ html, body {
 	width: 220px;
 }
 
+.slick-prev {
+	font-size: 2em;
+}
+
 .image-faded {
 	height: 47%;
 	margin-top: -30px;
@@ -181,14 +191,14 @@ html, body {
 
 .image-faded .text-faded{
 	margin-left: 10%;
-	width: 30%;
+	width: 40%;
 	min-width: 200px;
 	float: left;
 }
 
 .image-faded .background-faded {
 	height: 100%;
-	width:60%;
+	width:50%;
 	float: right;
 	background-color: white;
 	background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, .1)), url("../img/doctor_mock.jpg");	
@@ -257,9 +267,14 @@ html, body {
 
 .image-faded h1 > p {
 	font-weight: 400;	
-	font-size: 1em;
+	font-size: 0.8em;
 }
 
+.image-faded section a {
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+}
 .trad-container {
 	padding-left: 50px;
 }
