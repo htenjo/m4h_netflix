@@ -227,7 +227,7 @@ html, body {
 
 .image-faded p {
 	
-	font-size: 1em;
+	font-size: 0.9em;
 	text-align: justify;
 }
 
@@ -261,7 +261,6 @@ html, body {
 }
 
 .trad-container {
-	margin-top: 10px;
 	padding-left: 50px;
 }
 
